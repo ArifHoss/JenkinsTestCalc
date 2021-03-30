@@ -11,5 +11,10 @@ pipeline{
                 sh 'mvn clean compile test'
             }
         }
+        stage('Test'){
+            steps{
+                sh 'mvn test'
+            }
+        }
     }
 }
