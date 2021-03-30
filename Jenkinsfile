@@ -8,7 +8,7 @@ pipeline{
             steps{
                 echo 'Calculator'
                 sh 'java --version'
-                sh 'mvn clean compile'
+                sh 'mvn clean compile test'
             }
         }
     }
